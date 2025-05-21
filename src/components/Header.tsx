@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
@@ -28,15 +27,19 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-hookah-dark/95 shadow-lg backdrop-blur-sm py-2" : "bg-transparent py-4"
+        isScrolled
+          ? "bg-hookah-dark/95 shadow-lg backdrop-blur-sm py-2"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="hookah-container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <div className="text-hookah-accent text-2xl">
-            <Icon name="Cloud" size={28} />
+            <Icon name="Flame" size={28} />
           </div>
-          <span className="font-montserrat font-bold text-xl text-white">HOOKAH<span className="text-hookah-accent">LOUNGE</span></span>
+          <span className="font-montserrat font-bold text-xl text-white">
+            FIRE<span className="text-hookah-accent">AND</span>SMOKE
+          </span>
         </a>
 
         {/* Desktop Navigation */}
